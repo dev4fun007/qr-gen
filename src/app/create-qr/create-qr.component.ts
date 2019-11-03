@@ -73,7 +73,7 @@ export class CreateQrComponent implements OnInit {
   }
 
 
-  private saveQR() {
+  saveQR() {
     if (!!this.qrText) {
       this.storageService.saveHistory(this.qrText, this.currentQR);
       this.showSnackbar('QR saved')
@@ -84,7 +84,7 @@ export class CreateQrComponent implements OnInit {
     
   }
 
-  private showSnackbar(msg: string) {
+  showSnackbar(msg: string) {
     //Show snackbar
     this.snackBar.open(msg, '', {
       duration: 2000,

@@ -26,12 +26,12 @@ export class HistoryComponent implements OnInit {
     this.historyList = this.storageService.readAllHistory();
   }
 
-  private delete(text: string) {
+  delete(text: string) {
     this.storageService.deleteHistory(text);
     this.populateHistory();
   }
 
-  private share(text: string) {
+  share(text: string) {
     this.bottomSheet.open(ShareBottomSheet)
   }
 
