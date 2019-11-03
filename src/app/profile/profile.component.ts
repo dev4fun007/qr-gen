@@ -8,7 +8,7 @@ import { StorageutilService } from '../services/storageutil.service';
 })
 export class ProfileComponent implements OnInit {
 
-  private historyCount = 0;
+  historyCount = 0;
 
   constructor(private storageUtilService: StorageutilService) { }
 

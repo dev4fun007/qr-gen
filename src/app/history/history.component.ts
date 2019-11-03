@@ -9,11 +9,10 @@ import { MatBottomSheet, MatBottomSheetRef } from '@angular/material';
 })
 export class HistoryComponent implements OnInit {
 
-  private showBackButton = true;
-  private title = 'History';
-  private showHistoryNav = false;
-
-  private historyList;
+  showBackButton = true;
+  title = 'History';
+  showHistoryNav = false;
+  historyList;
 
 
   constructor(private storageService: StorageutilService,

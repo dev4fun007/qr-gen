@@ -10,14 +10,14 @@ import { StorageutilService } from '../services/storageutil.service';
 })
 export class CreateQrComponent implements OnInit {
 
-  private qrCodeImage = '../../../assets/download.png';
-  private showProgressSpinner = false;
-  private qrText: string;
-  private currentQR;
+  qrCodeImage = '../../../assets/download.png';
+  showProgressSpinner = false;
+  qrText: string;
+  currentQR;
 
-  private showBackButton = true;
-  private title = 'Generate New QR Code';
-  private showHistoryNav = true;
+  showBackButton = true;
+  title = 'Generate New QR Code';
+  showHistoryNav = true;
 
 
   constructor(private snackBar: MatSnackBar,
